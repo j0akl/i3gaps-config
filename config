@@ -31,6 +31,14 @@ exec --no-startup-id nm-applet
 # Turn off sleep
 exec xset s off
 
+# screensaver
+exec nitrogen --restore &
+
+# gaps
+smart_borders on
+gaps inner 15
+gaps outer 10
+
 # window borders
 default_border pixel 1
 default_floating_border pixel 1
