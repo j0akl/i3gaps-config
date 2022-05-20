@@ -31,22 +31,6 @@ exec --no-startup-id nm-applet
 # Turn off sleep
 exec xset s off
 
-# workspace setup
-assign [class="pycharm-community"] 2
-assign [class="gitkraken"] 2
-assign [class="terminal"] 3
-assign [class="slack"] 1
-assign [class="spotify"] 1
-assign [class="google-chrome-stable"] 1
-
-# startup applications
-exec nitrogen --restore &
-
-# i3-gaps
-smart_borders on
-gaps inner 15
-gaps outer 10
-
 # window borders
 default_border pixel 1
 default_floating_border pixel 1
@@ -69,7 +53,7 @@ set $right l
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec kitty
+bindsym Mod1+Return exec gnome-terminal
 
 # start a new browser window
 bindsym Mod1+c exec google-chrome-stable
